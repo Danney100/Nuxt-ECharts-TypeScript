@@ -1,0 +1,21 @@
+{
+  "rows": [
+    {
+      "height": "auto"
+    }
+  ],
+  "columns": [
+    {
+      "title": "Company",
+      "field": "company.name"
+    },
+    {
+      "title": "Position"
+      "field": "position"
+    },
+    {
+      "title": "Name",
+      "field": "name"
+    }
+  ]
+}

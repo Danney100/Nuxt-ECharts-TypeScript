@@ -1,0 +1,60 @@
+@import "./util/_breakpoints.scss";
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: linear-gradient(to right top, #e9e9f4, #f9f9fc, #fff);
+}
+
+.container-body {
+  display: grid;
+  height: 100vh;
+  max-height: 100vh;
+
+  grid-template-areas: "nav header header"
+                       "nav content content";
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-columns: auto auto minmax(0, 1fr);
+}
+
+main {
+  grid-area: content;
+  overflow: hidden;
+  position: relative;
+  overflow-y: auto;
+  height: 100%;
+}
+
+nav.nav-sidebar {
+  grid-area: nav;
+  display: flex;
+  max-height: 100vh;
+  height: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+footer {
+  border: 1px solid #edecec;
+  box-shadow: rgba(120, 131, 132, 0.3) 2px 2px 8px -5px;
+  margin-top: 10px;
+  border-radius: 3px;
+  grid-area: footer;
+}
+
+.layout-enter-active, .layout-leave-active {
+  transition: opacity .4s
+}
+.layout-enter, .layout-leave-active {
+  opacity: 20%
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 40%
+}

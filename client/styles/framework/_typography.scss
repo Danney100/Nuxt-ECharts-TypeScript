@@ -1,0 +1,16 @@
+@import '@/../node_modules/typeface-poppins/index.css';
+
+body, .popover {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  color: #53535c;
+}
+.text-muted {
+  color: #8b939a !important;
+}
+
+code.pretty-code {
+  white-space: pre-wrap;
+}

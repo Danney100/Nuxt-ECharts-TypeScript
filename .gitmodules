@@ -1,0 +1,3 @@
+[submodule "client/static/font"]
+	path = client/static/font
+	url = git@github.com:ParadigmInteractive/commonFonts.git
